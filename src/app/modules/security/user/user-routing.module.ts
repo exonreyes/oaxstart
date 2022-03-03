@@ -6,7 +6,7 @@ import {UserRoleComponent} from "@modules/security/user/user-role/user-role.comp
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'user-list',
     component: UserListComponent
   },
   {

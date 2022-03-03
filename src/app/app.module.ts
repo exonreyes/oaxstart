@@ -8,7 +8,7 @@ import {SharedModule} from "./shared/shared.module";
 import {LocationStrategy, PathLocationStrategy} from "@angular/common";
 import {SkeletonComponent} from './layout/skeleton/skeleton.component';
 import {FooterComponent} from './layout/footer/footer.component';
-import {NavigationComponent} from './layout/navigation/navigation.component';
+import {NavigationComponent} from './layout/topbar/navigation.component';
 import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import {SideBarService} from "@data/services/api/SideBarService";
 // import {DashBoardComponent} from './modules/general/dash-board/dash-board.component';

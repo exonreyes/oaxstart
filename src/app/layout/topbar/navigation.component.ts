@@ -5,7 +5,7 @@ import {faBell,faDotCircle, faEnvelope} from "@fortawesome/free-regular-svg-icon
 
 
 @Component({
-  selector: 'app-navigation',
+  selector: 'app-topbar',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
