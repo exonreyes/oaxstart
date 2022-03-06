@@ -22,7 +22,6 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     FooterComponent,
     NavigationComponent,
     SidebarComponent,
-    // DashBoardComponent,
   ],
   imports: [
     BrowserModule,

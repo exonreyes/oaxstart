@@ -1,11 +1,14 @@
 // Importamos los componentes
 
-import {TargetComponent} from "@shared/components/target/target.component";
+// import {TargetComponent} from "@shared/components/target/target.component";
+
+
+
+import {TitleComponent} from "@shared/components/title/title.component";
 
 export const components: any[] = [
-  TargetComponent
+  // TargetComponent
+  TitleComponent
 ];
-export * from "@shared/components/target/target.component";
-
-
 // Exportando componentes
+export * from "@shared/components/title/title.component";
