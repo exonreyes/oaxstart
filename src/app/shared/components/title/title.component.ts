@@ -7,8 +7,9 @@ import {Title} from "@angular/platform-browser";
 })
 export class TitleComponent implements OnInit {
   @Input() data: ITitle = {
+    icon: "",
     icon_color: "",
-    type:'primary',
+    nameClassTxtForeground:'',
     text:''
   };
 

@@ -1,5 +1,6 @@
 export interface ITitle {
+  icon: string;
   text: string;
-  type: string;
+  nameClassTxtForeground: string;
   icon_color:string;
 }

@@ -1,23 +1,13 @@
 <main>
-  <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+  <header class="page-header page-header-compact page-header-light border-bottom mb-4 bg-default-header"  [ngClass]="topHeader">
     <div class="container-fluid px-4">
       <div class="page-header-content">
         <div class="row align-items-center justify-content-between pt-3">
 
           <app-title [data]="title" class="col-auto mb-3"></app-title>
-          <div class="col-12 col-xl-auto mb-3">
+
+          <div class="col-12 col-xl-auto mb-3 ">
             <a class="btn btn-sm btn-light text-primary" href="user-management-groups-list.html">
-              <svg class="feather feather-users me-1" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
-                   stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-              Manage Groups
-            </a>
-            <a class="btn btn-sm btn-light text-primary" href="user-management-add-user.html">
               <svg class="feather feather-user-plus me-1" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                    xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +16,20 @@
                 <line x1="20" x2="20" y1="8" y2="14"></line>
                 <line x1="23" x2="17" y1="11" y2="11"></line>
               </svg>
-              Add New User
+              Agregar usuario
+            </a>
+            <span class="p-1"></span>
+            <a class="btn btn-sm btn-light text-primary" routerLink="/user-role">
+              <svg class="feather feather-users me-1" fill="none" height="24" stroke="currentColor"
+                   stroke-linecap="round"
+                   stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              Administrar grupos
             </a>
           </div>
         </div>
@@ -82,7 +85,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -90,7 +94,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -121,7 +126,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -129,7 +135,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -157,7 +164,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -165,7 +173,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -193,7 +202,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -201,7 +211,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -226,7 +237,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -234,7 +246,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -259,7 +272,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -267,7 +281,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -292,7 +307,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -300,7 +316,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -328,7 +345,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -336,7 +354,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -361,7 +380,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -369,7 +389,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
@@ -394,7 +415,8 @@
                 <td>20 Jun 2021</td>
                 <td>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html">
-                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-edit" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -402,7 +424,8 @@
                     </svg>
                   </a>
                   <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!">
-                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    <svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round"
                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                          xmlns="http://www.w3.org/2000/svg">
                       <polyline points="3 6 5 6 21 6"></polyline>
