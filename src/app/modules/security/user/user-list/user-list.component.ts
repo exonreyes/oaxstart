@@ -9,7 +9,7 @@ export class UserListComponent implements OnInit {
     nameClassTxtForeground: 'text-white',
     text: 'Usuarios registrados',
     icon_color: '',
-    icon: 'assets/img/modules/users-group.svg'
+    icon: 'assets/img/modules/setting/security/users-group.svg'
   };
 
   constructor() {

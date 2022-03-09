@@ -30,7 +30,7 @@
         Área personal
       </a>
 
-      <!--Aplicaciones permitidas-->
+      <!--MedLife Modulo-->
       <div class="sidenav-menu-heading">Accesibilidad</div>
       <a aria-controls="collapseFlows" aria-expanded="false" class="nav-link collapsed" data-bs-target="#collapseFlows"
          data-bs-toggle="collapse" href="javascript:void(0);">
@@ -44,11 +44,13 @@
       <div class="collapse" data-bs-parent="#accordionSidenav" id="collapseFlows">
         <nav class="sidenav-menu-nested nav">
           <a class="nav-link" href="multi-tenant-select.html"><img class="icon-sidebar icon-sidebar-submenu"
+                                                                   src="assets/img/modules/medical/doctor.svg">Productos | Servicios</a>
+          <a class="nav-link" href="multi-tenant-select.html"><img class="icon-sidebar icon-sidebar-submenu"
                                                                    src="assets/img/modules/medical/patient.svg">Pacientes</a>
           <a class="nav-link" href="multi-tenant-select.html"><img class="icon-sidebar icon-sidebar-submenu"
                                                                    src="assets/img/modules/medical/history-medical.svg">Expedientes</a>
           <a class="nav-link" href="multi-tenant-select.html"><img class="icon-sidebar icon-sidebar-submenu"
-                                                                   src="assets/img/modules/medical/doctor.svg">Médicos</a>
+                                                                   src="assets/img/modules/medical/doctor.svg">Catálogo médico</a>
         </nav>
       </div>
 
@@ -58,20 +60,29 @@
       <!--      EMPRESA-->
       <a aria-controls="collapseComponents" aria-expanded="false" class="nav-link collapsed"
          data-bs-target="#collapseComponents" data-bs-toggle="collapse" href="javascript:void(0);">
-        <div class="nav-link-icon"><img src="../../../assets/img/modules/setting/business/office.svg" class="icon-sidebar"></div>
+        <div class="nav-link-icon"><img class="icon-sidebar"
+                                        src="../../../assets/img/modules/setting/business/office.svg"></div>
         Empresa
-        <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        <div class="sidenav-collapse-arrow">
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </div>
       </a>
       <div class="collapse" data-bs-parent="#accordionSidenav" id="collapseComponents">
         <nav class="sidenav-menu-nested nav">
-          <a class="nav-link" href="alerts.html"><mat-icon class="icon-sidebar-submenu text-primary">insert_chart_outlined</mat-icon>Datos generales</a>
+          <a class="nav-link" href="alerts.html">
+            <mat-icon class="icon-sidebar-submenu text-primary">insert_chart_outlined</mat-icon>
+            Datos generales</a>
+          <a class="nav-link" href="alerts.html">
+           <img src="assets/img/modules/setting/business/employees.svg" class="icon-sidebar-submenu icon-sidebar">
+            Empleados</a>
         </nav>
       </div>
 
 
       <a aria-controls="collapseLayouts" aria-expanded="false" class="nav-link collapsed"
          data-bs-target="#collapseLayouts" data-bs-toggle="collapse" href="javascript:void(0);">
-        <div class="nav-link-icon"><img class="icon-sidebar" src="assets/img/modules/setting/security/security.svg"></div>
+        <div class="nav-link-icon"><img class="icon-sidebar" src="assets/img/modules/setting/security/security.svg">
+        </div>
         Seguridad
         <div class="sidenav-collapse-arrow">
           <mat-icon>keyboard_arrow_down</mat-icon>
@@ -83,100 +94,30 @@
           <a aria-controls="collapseLayoutSidenavVariations" aria-expanded="false" class="nav-link collapsed"
              data-bs-target="#collapseLayoutSidenavVariations" data-bs-toggle="collapse"
              href="javascript:void(0);">
-            Roles de operación
+            <img class="icon-sidebar-submenu icon-sidebar" src="assets/img/modules/setting/security/users.svg">
+            Usuarios
             <div class="sidenav-collapse-arrow">
               <mat-icon>keyboard_arrow_down</mat-icon>
             </div>
           </a>
           <div class="collapse" data-bs-parent="#accordionSidenavLayout" id="collapseLayoutSidenavVariations">
             <nav class="sidenav-menu-nested nav">
-              <a class="nav-link" href="layout-static.html">Static Sidenav</a>
-              <a class="nav-link" href="layout-dark.html">Dark Sidenav</a>
-              <a class="nav-link" href="layout-rtl.html">RTL Layout</a>
-            </nav>
-          </div>
-          <!-- Nested Sidenav Accordion (Layout -> Container Options)-->
-          <a aria-controls="collapseLayoutContainers" aria-expanded="false" class="nav-link collapsed"
-             data-bs-target="#collapseLayoutContainers" data-bs-toggle="collapse" href="javascript:void(0);">
-            Empleados
-            <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-          </a>
-          <div class="collapse" data-bs-parent="#accordionSidenavLayout" id="collapseLayoutContainers">
-            <nav class="sidenav-menu-nested nav">
-              <a class="nav-link" href="layout-boxed.html">Boxed Layout</a>
-              <a class="nav-link" href="layout-fluid.html">Fluid Layout</a>
-            </nav>
-          </div>
-          <!-- Nested Sidenav Accordion (Layout -> Page Headers)-->
-          <a aria-controls="collapseLayoutsPageHeaders" aria-expanded="false" class="nav-link collapsed"
-             data-bs-target="#collapseLayoutsPageHeaders" data-bs-toggle="collapse"
-             href="javascript:void(0);">
-            Page Headers
-            <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-          </a>
-          <div class="collapse" data-bs-parent="#accordionSidenavLayout" id="collapseLayoutsPageHeaders">
-            <nav class="sidenav-menu-nested nav">
-              <a class="nav-link" href="header-simplified.html">Simplified</a>
-              <a class="nav-link" href="header-compact.html">Compact</a>
-              <a class="nav-link" href="header-overlap.html">Content Overlap</a>
-              <a class="nav-link" href="header-breadcrumbs.html">Breadcrumbs</a>
-              <a class="nav-link" href="header-light.html">Light</a>
-            </nav>
-          </div>
-          <!-- Nested Sidenav Accordion (Layout -> Starter Layouts)-->
-          <a aria-controls="collapseLayoutsStarterTemplates" aria-expanded="false" class="nav-link collapsed"
-             data-bs-target="#collapseLayoutsStarterTemplates" data-bs-toggle="collapse"
-             href="javascript:void(0);">
-            Starter Layouts
-            <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-          </a>
-          <div class="collapse" data-bs-parent="#accordionSidenavLayout" id="collapseLayoutsStarterTemplates">
-            <nav class="sidenav-menu-nested nav">
-              <a class="nav-link" href="starter-default.html">Default</a>
-              <a class="nav-link" href="starter-minimal.html">Minimal</a>
+              <a class="nav-link" routerLink="/user-list">
+                <mat-icon class="icon-sidebar-submenu">assignment_ind</mat-icon>
+                Accesos</a>
+              <a class="nav-link" href="layout-dark.html"><img class="icon-sidebar icon-sidebar-submenu"
+                                                               src="assets/img/modules/setting/security/user-group.svg">Grupos</a>
             </nav>
           </div>
         </nav>
       </div>
-
-
-      <!-- Sidenav Accordion (Utilities)-->
-      <a aria-controls="collapseUtilities" aria-expanded="false" class="nav-link collapsed"
-         data-bs-target="#collapseUtilities" data-bs-toggle="collapse" href="javascript:void(0);">
-        <div class="nav-link-icon"><i data-feather="tool"></i></div>
-        Utilities
-        <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-      </a>
-      <div class="collapse" data-bs-parent="#accordionSidenav" id="collapseUtilities">
-        <nav class="sidenav-menu-nested nav">
-          <a class="nav-link" href="animations.html">Animations</a>
-          <a class="nav-link" href="background.html">Background</a>
-          <a class="nav-link" href="borders.html">Borders</a>
-          <a class="nav-link" href="lift.html">Lift</a>
-          <a class="nav-link" href="shadows.html">Shadows</a>
-          <a class="nav-link" href="typography.html">Typography</a>
-          <a class="nav-link" href="typography.html">Typography</a>
-        </nav>
-      </div>
-      <!-- Sidenav Heading (Addons)-->
-      <div class="sidenav-menu-heading">Empresa</div>
-      <!-- Sidenav Link (Charts)-->
-      <a class="nav-link" routerLink='/user-list'>
-        <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
-        Seguridad
-      </a>
-      <!-- Sidenav Link (Tables)-->
-      <a class="nav-link" routerLink="/user-role">
-        <div class="nav-link-icon"><i data-feather="filter"></i></div>
-        Roles
-      </a>
     </div>
   </div>
   <!-- Sidenav Footer-->
   <div class="sidenav-footer">
     <div class="sidenav-footer-content">
-      <div class="sidenav-footer-subtitle">Logged in as:</div>
-      <div class="sidenav-footer-title">Valerie Luna</div>
+      <div class="sidenav-footer-subtitle">Conectado como:</div>
+      <div class="sidenav-footer-titles">Usuario de prueba</div>
     </div>
   </div>
 </nav>
