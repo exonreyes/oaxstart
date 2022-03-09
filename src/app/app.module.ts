@@ -13,6 +13,7 @@ import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import {SideBarService} from "@data/services/api/SideBarService";
 // import {DashBoardComponent} from './modules/general/dash-board/dash-board.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     FontAwesomeModule,
-
+    MatIconModule,
     CoreModule,
     SharedModule,
     AppRoutingModule
