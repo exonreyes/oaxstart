@@ -1,11 +1,17 @@
-.bg-sidebar{
+.bg-sidebar {
   /*background-color: #EBEDEF;*/
   background-color: #F7F9F9;
 }
-.icon-sidebar{
-  width: 20px;
-  height: 20px;
+
+.icon-sidebar {
+  width: 24px;
+  height: 24px;
 }
-.icon-sidebar-submenu{
+
+.icon-sidebar-mr-5 {
+
   margin-right: 5px;
+}
+.material-icon-color{
+  color: #616A6B;
 }
