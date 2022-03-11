@@ -5,6 +5,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import {UserRoutingModule} from "@modules/security/user/user-routing.module";
 import { UserRoleComponent } from './user-role/user-role.component';
+import { DasbhoardComponent } from './access/dasbhoard/dasbhoard.component';
 
 
 
@@ -12,7 +13,8 @@ import { UserRoleComponent } from './user-role/user-role.component';
   declarations: [
     UserListComponent,
     UserDetailComponent,
-    UserRoleComponent
+    UserRoleComponent,
+    DasbhoardComponent
   ],
   imports: [
     SharedModule,
