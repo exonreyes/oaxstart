@@ -14,6 +14,7 @@ import {SideBarService} from "@data/services/api/SideBarService";
 // import {DashBoardComponent} from './modules/general/dash-board/dash-board.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {MatIconModule} from '@angular/material/icon';
     CoreModule,
     SharedModule,
     AppRoutingModule
+    BrowserAnimationsModule
   ],
   providers: [SideBarService, {provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]

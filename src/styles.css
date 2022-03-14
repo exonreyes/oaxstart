@@ -86,3 +86,6 @@
 .bg-default-header{
   background-color: #1460aa;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
